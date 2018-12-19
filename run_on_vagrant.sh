@@ -8,9 +8,7 @@ if [[ ${#} != 1 ]]; then
     exit 1
 fi
 
-if [[ ! -f ${VAGRANT_SSH_CONF_PATH} ]]; then
-    vagrant ssh-config > ${VAGRANT_SSH_CONF_PATH}
-fi
+vagrant ssh-config > ${VAGRANT_SSH_CONF_PATH}
 
 if [[ -f ${KIVY_CONF_PATH} ]]; then
     scp -F ${VAGRANT_SSH_CONF_PATH} ${KIVY_CONF_PATH} default:~/.kivy/config.ini
