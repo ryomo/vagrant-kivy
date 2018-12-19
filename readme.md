@@ -40,3 +40,5 @@ vagrant plugin install vagrant-vbguest
 vagrant up
 ./run_on_vagrant.sh app/hello.py
 ```
+
+![screencast](https://github.com/ryomo/vagrant-kivy/blob/media/media/screencast.gif)
