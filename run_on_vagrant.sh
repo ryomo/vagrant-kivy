@@ -18,4 +18,4 @@ fi
 # `default`: Host name set in config file.
 # `-F`: Specifies a config file.
 # `-Y`: X11 forwarding.
-ssh default -F ${VAGRANT_SSH_CONF_PATH} -Y "python3 ${1}"
+ssh default -F ${VAGRANT_SSH_CONF_PATH} -Y "python3 project/${1}"
