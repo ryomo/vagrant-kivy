@@ -7,7 +7,7 @@ sudo add-apt-repository -y ppa:kivy-team/kivy && sudo apt-get update
 #sudo apt-get upgrade -y
 
 # Desktop Environment
-sudo apt-get install -y lubuntu-desktop
+sudo apt-get install -y lxde
 
 # Python3, pip3
 sudo apt-get install -y python3 python3-pip
