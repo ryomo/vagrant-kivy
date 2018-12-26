@@ -19,8 +19,5 @@ ln -s /usr/bin/python3 ~/.local/bin/python
 # Kivy
 sudo apt-get install -y python3-kivy
 
-# Python packages I use :P
-pip3 install --user qrcode requests
-
 # To run GUI apps via ssh
 echo 'export DISPLAY=:0' >> .bashrc
