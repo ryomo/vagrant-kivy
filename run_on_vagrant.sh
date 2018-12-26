@@ -11,6 +11,7 @@ fi
 vagrant ssh-config > ${VAGRANT_SSH_CONF_PATH}
 
 if [[ -f ${KIVY_CONF_PATH} ]]; then
+    ssh default -F ${VAGRANT_SSH_CONF_PATH} 'mkdir -p .kivy'
     scp -F ${VAGRANT_SSH_CONF_PATH} ${KIVY_CONF_PATH} default:~/.kivy/config.ini
 fi
 
