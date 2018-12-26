@@ -38,6 +38,11 @@ vagrant plugin install vagrant-vbguest
 
 ```bash
 vagrant up
+```
+
+...wait 15 min or so
+
+```bash
 ./run_on_vagrant.sh app/hello.py
 ```
 
